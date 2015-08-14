@@ -1,6 +1,6 @@
 {
   "name": "mvc_task_runners",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Sample ASP.NET 5 app demonstrating use of Gulp",
   "author": "Scott Addie",
   "license": "MIT",
