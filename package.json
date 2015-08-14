@@ -1,0 +1,17 @@
+{
+  "name": "mvc_task_runners",
+  "version": "0.0.0",
+  "description": "Sample ASP.NET 5 app demonstrating use of Gulp",
+  "author": "Scott Addie",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "2.5.2",
+    "gulp-cssmin": "0.1.7",
+    "gulp-uglify": "1.2.0",
+    "rimraf": "2.2.8"
+  }
+}
