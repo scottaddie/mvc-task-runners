@@ -2,9 +2,7 @@
 'use strict';
 var gulp = require("gulp"),
   rimraf = require("rimraf"),
-  concat = require("gulp-concat"),
-  cssmin = require("gulp-cssmin"),
-  uglify = require("gulp-uglify"),
+  $ = require("gulp-load-plugins")(),
   project = require("./project.json");
 
 var paths = {
@@ -32,15 +30,15 @@ gulp.task("min:js", function() {
   gulp.src([paths.js, "!" + paths.minJs], {
       base: "."
     })
-    .pipe(concat(paths.concatJsDest))
-    .pipe(uglify())
+    .pipe($.concat(paths.concatJsDest))
+    .pipe($.uglify())
     .pipe(gulp.dest("."));
 });
 
 gulp.task("min:css", function() {
   gulp.src([paths.css, "!" + paths.minCss])
-    .pipe(concat(paths.concatCssDest))
-    .pipe(cssmin())
+    .pipe($.concat(paths.concatCssDest))
+    .pipe($.cssmin())
     .pipe(gulp.dest("."));
 });
 
