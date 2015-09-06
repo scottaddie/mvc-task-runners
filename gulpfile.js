@@ -19,6 +19,13 @@ paths.minCss = paths.webroot + 'css/**/*.min.css';
 paths.concatJsDest = paths.webroot + 'js/site.min.js';
 paths.concatCssDest = paths.webroot + 'css/site.min.css';
 
+gulp.task('bootlint', function(){
+  gulp.src('Views/**/*.cshtml')
+    .pipe($.bootlint({
+      disabledIds: ['E001', 'E007']
+    }));
+});
+
 gulp.task('clean:js', function(callback) {
   clean(paths.concatJsDest, callback);
 });
