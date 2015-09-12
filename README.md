@@ -11,6 +11,6 @@ These setup instructions assume that you have Visual Studio 2015 installed. If n
   `dnu restore`. If the "dnu" command is not recognized, then first try executing this command:
 `dnvm upgrade`.
 4. Navigate to the project directory ("mvc-task-runners"), and run the following command:
-  `dnx . web`.
+`dnx web`
   Note the localhost address printed to the console.
 5. Navigate to the aforementioned localhost address in your browser of choice. Typically, the localhost address is something like "http://localhost:5000".
